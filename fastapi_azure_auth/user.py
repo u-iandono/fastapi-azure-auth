@@ -10,4 +10,4 @@ class User(BaseModel):
     claims: dict[Any, Any] = Field(..., description='The entire decoded token')
     scp: Optional[str] = Field(default=None, description='Scope')
     name: Optional[str] = Field(default=None, description='Name')
-    access_token: str = Field(..., description='The access_token. Can be used for fetching the Graph API')
+    access_token: str = Field(..., description='The access_token')
